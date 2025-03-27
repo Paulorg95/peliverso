@@ -8,10 +8,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #CFD8DC; /* Light primary color */
     color: #212121; /* Primary text */
-    padding: 16px;
+    padding: 1rem;
 }
 
 /* HEADER */
@@ -19,9 +19,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #455A64, #607D8B); /* Gradiente de dark a primary */
-    padding: 16px;
-    border-radius: 8px;
+    background: linear-gradient(90deg, #455A64, #607D8B); /* Gradiente */
+    padding: 1rem;
+    border-radius: 0.5rem;
     color: #FFFFFF;
 }
 
@@ -30,39 +30,39 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .logo-titulo img {
-    width: 60px;
-    margin-right: 12px;
+    width: 3.75rem;
+    margin-right: 0.75rem;
 }
 
 .logo-titulo h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+    font-size: 2.625rem;
 }
 
 /* NAVBAR */
 nav {
     width: 100%;
     background-color: #607D8B; /* Primary color */
-    padding: 10px 0;
+    padding: 0.625rem 0;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #FFFFFF; /* Text / Icons */
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: color 0.3s;
 }
 
@@ -72,10 +72,10 @@ nav ul li a:hover {
 
 /* CONTENIDO PRINCIPAL */
 main {
-    margin-top: 24px;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     align-items: center;
     text-align: center;
 }
@@ -83,19 +83,19 @@ main {
 .contenido {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 1.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
 }
 
 .columna {
     flex: 1;
     background: #FFFFFF;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #BDBDBD; /* Divider color */
-    animation: fadeInUp 0.6s ease; /* animación */
+    animation: fadeInUp 0.6s ease;
 }
 
 @keyframes fadeInUp {
@@ -111,33 +111,34 @@ main {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    margin-bottom: 12px;
-    color: #212121; /* Primary text */
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #212121;
 }
 
 h3 {
     font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    color: #212121; /* Primary text */
+    font-size: 1.5rem;
+    color: #212121;
 }
 
 p {
-    color: #757575; /* Secondary text */
+    color: #757575;
 }
 
 /* SECCIÓN RESEÑAS DE LA COMUNIDAD */
 .resenas-comunidad {
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
 .resenas-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     justify-content: center;
-    gap: 24px;
 }
 
 /* FORMULARIO EN PARTICIPA */
@@ -146,43 +147,43 @@ form {
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
     margin: 0 auto;
 }
 
 form label, form input, form textarea, form select {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 8px;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    padding: 0.5rem;
     border: 1px solid #BDBDBD;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 input:focus, textarea:focus, select:focus {
-    outline: 2px solid #536DFE; /* Color de acento */
-    background-color: #E3F2FD; /* Un azul muy suave de fondo */
+    outline: 2px solid #536DFE;
+    background-color: #E3F2FD;
     border-color: #536DFE;
 }
 
 /* BOTÓN DE ENVÍO */
 button {
-    background-color: #536DFE; /* Accent color */
+    background-color: #536DFE;
     color: #FFFFFF;
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
-    transition: background 0.3s;
-    min-width: 48px;
-    min-height: 48px;
+    transition: background 0.3s, transform 0.3s;
+    min-width: 3rem;
+    min-height: 3rem;
     display: block;
-    margin: 16px auto;
+    margin: 1rem auto;
 }
 
 button:hover {
@@ -192,10 +193,33 @@ button:hover {
 
 /* FOOTER */
 footer {
-    margin-top: 32px;
+    margin-top: 2rem;
     text-align: center;
-    padding: 16px;
-    background: linear-gradient(90deg, #607D8B, #455A64); /* Gradiente inverso al header */
+    padding: 1rem;
+    background: linear-gradient(90deg, #607D8B, #455A64);
     color: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .resenas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    .logo-titulo {
+        flex-direction: column;
+    }
 }
