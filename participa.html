@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PeliVerso</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo-titulo">
-                <img src="logo.png" alt="Logo de PeliVerso">
-                <h1>PeliVerso</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a></li>
-                    <li><a href="resenas.html"><i class="fas fa-star"></i> Reseñas</a></li>
-                    <li><a href="participa.html"><i class="fas fa-pencil-alt"></i> Participa</a></li>
-                </ul>
-            </nav>
-        </header>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeliVerso</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="images/logo_web.png" alt="Logo de PeliVerso">
+            <h1>PeliVerso</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                <li><a href="resenas.html"><i class="fas fa-star"></i> Reseñas</a></li>
+                <li><a href="participa.html"><i class="fas fa-pencil-alt"></i> Participa</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Sección de envío de reseñas -->
     <main>
         <h2>Envíanos tu Reseña</h2>
-        
+
         <section>
             <form id="formResena">
                 <label for="nombre">Tu Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-                
+
                 <label for="titulo">Título de la Película/Serie:</label>
                 <input type="text" id="titulo" name="titulo" required>
-                
+
                 <label for="opinion">Tu Opinión:</label>
                 <textarea id="opinion" name="opinion" rows="4" required></textarea>
-                
+
                 <label for="calificacion">Calificación (1 a 5 estrellas):</label>
                 <select id="calificacion" name="calificacion" required>
                     <option value="">Selecciona una calificación</option>
@@ -48,15 +52,17 @@
                     <option value="4">4 estrellas</option>
                     <option value="5">5 estrellas</option>
                 </select>
-                
+
                 <button type="submit">Enviar Reseña</button>
             </form>
         </section>
     </main>
-    
+
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 PeliVerso. Todos los derechos reservados.</p>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
+
 </html>
