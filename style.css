@@ -1,0 +1,201 @@
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #CFD8DC; /* Light primary color */
+    color: #212121; /* Primary text */
+    padding: 16px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #455A64, #607D8B); /* Gradiente de dark a primary */
+    padding: 16px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.logo-titulo img {
+    width: 60px;
+    margin-right: 12px;
+}
+
+.logo-titulo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background-color: #607D8B; /* Primary color */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Text / Icons */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #536DFE; /* Accent color */
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.columna {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #BDBDBD; /* Divider color */
+    animation: fadeInUp 0.6s ease; /* animación */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #212121; /* Primary text */
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #212121; /* Primary text */
+}
+
+p {
+    color: #757575; /* Secondary text */
+}
+
+/* SECCIÓN RESEÑAS DE LA COMUNIDAD */
+.resenas-comunidad {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resenas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* FORMULARIO EN PARTICIPA */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea, form select {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #536DFE; /* Color de acento */
+    background-color: #E3F2FD; /* Un azul muy suave de fondo */
+    border-color: #536DFE;
+}
+
+/* BOTÓN DE ENVÍO */
+button {
+    background-color: #536DFE; /* Accent color */
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    min-width: 48px;
+    min-height: 48px;
+    display: block;
+    margin: 16px auto;
+}
+
+button:hover {
+    background-color: #3F51B5;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 32px;
+    text-align: center;
+    padding: 16px;
+    background: linear-gradient(90deg, #607D8B, #455A64); /* Gradiente inverso al header */
+    color: #FFFFFF;
+    border-radius: 8px;
+}
