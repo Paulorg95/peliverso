@@ -1,16 +1,19 @@
 /* RESET DE ESTILOS */
-* {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    background-color: #CFD8DC; /* Light primary color */
-    color: #212121; /* Primary text */
+    background-color: #CFD8DC;
+    color: #212121;
     padding: 1rem;
 }
 
@@ -19,7 +22,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #455A64, #607D8B); /* Gradiente */
+    background: linear-gradient(90deg, #455A64, #607D8B);
     padding: 1rem;
     border-radius: 0.5rem;
     color: #FFFFFF;
@@ -46,7 +49,7 @@ header {
 /* NAVBAR */
 nav {
     width: 100%;
-    background-color: #607D8B; /* Primary color */
+    background-color: #607D8B;
     padding: 0.625rem 0;
     text-align: center;
     border-radius: 0.25rem;
@@ -61,13 +64,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF; /* Text / Icons */
+    color: #FFFFFF;
     font-size: 1.125rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #536DFE; /* Accent color */
+    color: #536DFE;
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -78,6 +81,12 @@ main {
     gap: 1.5rem;
     align-items: center;
     text-align: center;
+    flex: 1;
+}
+
+main h2, main h3 {
+    text-align: center;
+    width: 100%;
 }
 
 .contenido {
@@ -94,8 +103,47 @@ main {
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #BDBDBD; /* Divider color */
+    border: 1px solid #BDBDBD;
     animation: fadeInUp 0.6s ease;
+}
+
+.columna article {
+    background: transparent;
+    padding: 0.5rem 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+.columna article + article {
+    margin-top: 1rem;
+}
+
+main article {
+    background: #FFFFFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #BDBDBD;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main article a.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #536DFE;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+main article a.button:hover {
+    background-color: #3F51B5;
 }
 
 @keyframes fadeInUp {
@@ -142,6 +190,13 @@ p {
 }
 
 /* FORMULARIO EN PARTICIPA */
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -153,6 +208,7 @@ form {
     width: 100%;
     max-width: 31.25rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 form label, form input, form textarea, form select {
@@ -162,6 +218,7 @@ form label, form input, form textarea, form select {
     padding: 0.5rem;
     border: 1px solid #BDBDBD;
     border-radius: 0.25rem;
+    transition: all 0.2s ease;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -194,11 +251,15 @@ button:hover {
 /* FOOTER */
 footer {
     margin-top: 2rem;
-    text-align: center;
     padding: 1rem;
     background: linear-gradient(90deg, #607D8B, #455A64);
     color: #FFFFFF;
     border-radius: 0.5rem;
+    text-align: center;
+}
+
+footer, footer p {
+    color: #FFFFFF;
 }
 
 /* MEDIA QUERIES */
