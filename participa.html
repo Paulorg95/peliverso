@@ -32,19 +32,19 @@
     <main>
         <h2>Envíanos tu Reseña</h2>
 
-        <section class="formulario-container">
-            <h3>Formulario de envío</h3>
-            <form id="formResena">
-                <label for="nombre">Tu Nombre:</label>
+        <section class="formulario-container"> <!-- Contenedor para el formulario -->
+            <h3>Formulario de envío</h3> <!-- Subtitulo del formulario -->
+            <form id="formResena"> <!-- formulario -->
+                <label for="nombre">Tu Nombre:</label> <!-- Campo para pedir el nombre del usuario -->
                 <input type="text" id="nombre" name="nombre" required>
 
-                <label for="titulo">Título de la Película/Serie:</label>
+                <label for="titulo">Título de la Película/Serie:</label> <!-- Campo para pedir el nombre de la serie o peli -->
                 <input type="text" id="titulo" name="titulo" required>
 
-                <label for="opinion">Tu Opinión:</label>
+                <label for="opinion">Tu Opinión:</label> <!-- Campo donde el user pone su opinion -->
                 <textarea id="opinion" name="opinion" rows="4" required></textarea>
 
-                <label for="calificacion">Calificación (1 a 5 estrellas):</label>
+                <label for="calificacion">Calificación (1 a 5 estrellas):</label> <!-- Desplegable donde el user elige la valoracion en estrellas -->
                 <select id="calificacion" name="calificacion" required>
                     <option value="">Selecciona una calificación</option>
                     <option value="1">1 estrella</option>
@@ -54,7 +54,7 @@
                     <option value="5">5 estrellas</option>
                 </select>
 
-                <button type="submit">Enviar Reseña</button>
+                <button type="submit">Enviar Reseña</button> <!-- Botón de envio del formulario -->
             </form>
         </section>
     </main>
@@ -63,8 +63,8 @@
     <footer>
         <p>&copy; 2025 PeliVerso. Todos los derechos reservados.</p>
     </footer>
-    <script src="scripts/form.js"></script>
-    <script src="scripts/intreract.js"></script>
+    <script src="scripts/form.js"></script> <!-- importamos el script para el formulario -->
+    <script src="scripts/intreract.js"></script> <!-- importamos el script para modificar el header de la web -->
 </body>
 
 </html>

@@ -2,24 +2,24 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Ponemos codificación UTF-8 para poder poner caracteres como tildes o ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Usado para que se adapte a moviles y tablets -->
     <title>PeliVerso</title>
+    <!-- Enlaces a los archisvos css y fuentes que tenemos que importar --> 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="logo-titulo">
-            <img src="images/logo_web.png" alt="Logo de PeliVerso">
-            <h1>PeliVerso</h1>
+        <div class="logo-titulo"> <!-- Contenedor con e logo y el titulo de la web -->
+            <img src="images/logo_web.png" alt="Logo de PeliVerso"> <!-- Imagen que usamos de logo de la web -->
+            <h1>PeliVerso</h1> <!-- Titulo de la web -->
         </div>
-        <nav>
-            <ul>
+        <nav> <!-- Barra de menu de la web -->
+            <ul> <!-- Enlaces para navegar internamente dentro de la web con imagenes dentro de los li -->
                 <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li> 
                 <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a></li>
                 <li><a href="resenas.html"><i class="fas fa-star"></i> Reseñas</a></li>
@@ -29,10 +29,10 @@
     </header>
 
     <main>
-        <section class="contenido">
-            <div class="columna">
+        <section class="contenido"> <!-- Seccion principal de esta pagina -->
+            <div class="columna"> <!-- Usamos div para dividir la seccion en dos columnas -->
                 <h2>Listado de últimas novedades</h2>
-                <article>
+                <article> <!-- article representa una noticia -->
                     <h3>HBO anuncia la fecha de estreno de la temporada 2 de 'The Last of Us'</h3>
                     <p>La esperada segunda temporada de la serie postapocalíptica se estrenará el 13 de abril de 2025 en HBO y Max.</p>
                     <a href="noticias.html#lastofus">Leer más</a>
@@ -50,13 +50,13 @@
                   </article>                     
             </div>
 
-            <div class="columna">
+            <div class="columna"> <!-- columna de reseñas -->
                 <h2>Últimas reseñas</h2>
               
-                <article>
+                <article> <!-- usamos aqui tambien article para las reseñas -->
                   <h3>Reseña: Dune Parte Dos</h3>
                   <p>Una obra maestra visual. Más intensa que la primera parte.</p>
-                  <a href="resenas.html#dune">Leer más</a>
+                  <a href="resenas.html#dune">Leer más</a> <!-- enlaces internos para ir la leer la noticia completa -->
                 </article>
               
                 <article>
@@ -74,13 +74,13 @@
               
         </section>
 
-        <section class="resenas-comunidad">
+        <section class="resenas-comunidad"> <!-- seccion de reseñas de la comunidadm tambien usamos un div con articles como en la anterior seccion -->
             <h2>Reseñas de la Comunidad</h2>
             <div class="resenas-grid">
                 <article>
                     <h3>Reseña de Laura G.</h3>
                     <p>“The Bear” es lo mejor que he visto este año. Es intensa, real, y muy emocional. Totalmente recomendable.</p>
-                    <a href="resenas.html#comunidad1">Leer más</a>
+                    <a href="resenas.html#comunidad1">Leer más</a> <!-- enlaces internos para ir a leer la reseña completa -->
                   </article>
                   
                   <article>
@@ -92,10 +92,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer> <!-- pie de pagina -->
         <p>&copy; 2025 PeliVerso. Todos los derechos reservados.</p>
     </footer>
-    <script src="scripts/intreract.js"></script>
+    <script src="scripts/intreract.js"></script> <!-- importamos el script para modificar el header de la web -->
 </body>
 
 </html>

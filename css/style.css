@@ -1,20 +1,20 @@
-/* RESET DE ESTILOS */
+/* ESTILOS DE LA WEB */
 html, body {
-    height: 100%;
+    height: 100%; /* aseguramos que ocupe todo el alto de la ventana */
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
+    display: flex; /* colocamos el footer abajo de la ventana aunque haya poco contenido en la pagina */
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* fuente general para texto */
     font-weight: 300;
-    font-size: 1rem;
-    background-color: #CFD8DC;
-    color: #212121;
-    padding: 1rem;
+    font-size: 1rem; /* tamaño baso de la fuente */
+    background-color: #CFD8DC; /* color del fondo */
+    color: #212121; /* color del texto */
+    padding: 1rem; /* espacio dentro del body */
 }
 
 /* HEADER */
@@ -22,10 +22,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #455A64, #607D8B);
+    background: linear-gradient(90deg, #455A64, #607D8B); /* Gradiente para el header y que quede mas visual */
     padding: 1rem;
     border-radius: 0.5rem;
-    color: #FFFFFF;
+    color: #FFFFFF; /* texto en blanco */
 }
 
 .logo-titulo {
@@ -37,16 +37,16 @@ header {
 }
 
 .logo-titulo img {
-    width: 3.75rem;
+    width: 3.75rem; /* tamaño de la imagen del logo */
     margin-right: 0.75rem;
 }
 
 .logo-titulo h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; /* fuente para los titulos */
     font-size: 2.625rem;
 }
 
-/* NAVBAR */
+/* barra de navegacion */
 nav {
     width: 100%;
     background-color: #607D8B;
@@ -56,21 +56,21 @@ nav {
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* eliminamos las viñetas de la vista */
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* quitamos subrayada del texto */
     color: #FFFFFF;
     font-size: 1.125rem;
-    transition: color 0.3s;
+    transition: color 0.3s; /* efecto al pasar el raton por encima */
 }
 
 nav ul li a:hover {
-    color: #536DFE;
+    color: #536DFE; /* color del boton */
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -81,7 +81,7 @@ main {
     gap: 1.5rem;
     align-items: center;
     text-align: center;
-    flex: 1;
+    flex: 1; /* footer al fondo de la pagina */
 }
 
 main h2, main h3 {
@@ -104,7 +104,7 @@ main h2, main h3 {
     border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #BDBDBD;
-    animation: fadeInUp 0.6s ease;
+    animation: fadeInUp 0.6s ease; /* animacion de entrada al entrar en la pagina */
 }
 
 .columna article {
@@ -117,7 +117,7 @@ main h2, main h3 {
 }
 
 .columna article + article {
-    margin-top: 1rem;
+    margin-top: 1rem; /* separacion entre los article */
 }
 
 main article {
@@ -146,6 +146,7 @@ main article a.button:hover {
     background-color: #3F51B5;
 }
 
+/* ANIMACION PARA APARICION DE ELEMENTOS */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -157,6 +158,8 @@ main article a.button:hover {
     }
 }
 
+
+/* FUENTES DE LA WEB */
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
@@ -171,7 +174,7 @@ h3 {
 }
 
 p {
-    color: #757575;
+    color: #757575; /* Color de texto secundario */
 }
 
 /* SECCIÓN RESEÑAS DE LA COMUNIDAD */
@@ -184,7 +187,7 @@ p {
 
 .resenas-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* para poner las reseñas en dos columnas */
     gap: 1.5rem;
     justify-content: center;
 }
@@ -245,7 +248,7 @@ button {
 
 button:hover {
     background-color: #3F51B5;
-    transform: scale(1.05);
+    transform: scale(1.05); /* efecto zoom al pasar el raton por encima */
 }
 
 /* FOOTER */
@@ -262,14 +265,14 @@ footer, footer p {
     color: #FFFFFF;
 }
 
-/* MEDIA QUERIES */
+/* adaptar el tamaño cuando se abre la web en moviles */
 @media (max-width: 768px) {
     .contenido {
-        flex-direction: column;
+        flex-direction: column; /* cambia las columnas de horizontal a vertical */
     }
 
     .resenas-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* pasa las reseñas a una columna */
     }
 
     nav ul {
